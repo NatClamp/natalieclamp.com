@@ -17,9 +17,5 @@
   "bugs": {
     "url": "https://github.com/NatClamp/natalieclamp.com/issues"
   },
-  "homepage": "https://github.com/NatClamp/natalieclamp.com#readme",
-  "devDependencies": {
-    "parcel-bundler": "^1.12.4",
-    "sass": "^1.23.3"
-  }
+  "homepage": "https://github.com/NatClamp/natalieclamp.com#readme"
 }
