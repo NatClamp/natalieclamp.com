@@ -102,11 +102,13 @@ ul {
 h4.list-title {
   font-size: 1.3em;
   font-weight: 800;
+  margin-bottom: 5px;
 }
 
 p.list-subtitle {
   font-style: italic;
   font-weight: 700;
+  margin-bottom: 5px;
 }
 
 p.list-desc {
@@ -150,5 +152,9 @@ p.list-desc {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 20px 10px;
+  }
+
+  p.list-desc {
+    padding-right: 20px;
   }
 }
