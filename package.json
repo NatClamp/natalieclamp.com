@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel index.html",
+    "dev": "parcel index.html",
     "build": "parcel build index.html"
   },
   "repository": {
@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/NatClamp/natalieclamp.com/issues"
   },
-  "homepage": "https://github.com/NatClamp/natalieclamp.com#readme"
+  "homepage": "https://github.com/NatClamp/natalieclamp.com#readme",
+  "devDependencies": {
+    "parcel-bundler": "1.12.4",
+    "sass": "1.23.7"
+  }
 }

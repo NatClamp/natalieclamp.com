@@ -1,0 +1,288 @@
+$dark-grey: #333533;
+$purple: #6d326d;
+$dark-blue: #003f91;
+$mid-blue: #46acc2;
+$winterwizard: #97dffc;
+$light-blue: #cce8ee;
+$pale-bg: #eef7f9;
+$white: #fff;
+
+$fancy-font: 'Calistoga', cursive; 
+$sans-font: 'Open Sans', sans-serif;
+
+* {
+  font-family: $sans-font;
+  font-weight: 300;
+  color: $dark-grey;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: $dark-blue;
+  color: $white;
+}
+
+main {
+  margin: 0 auto;
+  @media screen and (min-width: 1200px) {
+    padding: 40px;
+  }
+}
+
+header, footer {
+  text-align: center;
+  padding: 0 1.6em;
+
+}
+
+.site-header-name {
+  color: $dark-grey;
+  margin-bottom: 10px;
+  font-size: 2.8em;
+  opacity: 0.8;
+  letter-spacing: -6px;
+  @media screen and (min-width: 1200px) {
+    font-size: 5em;
+    letter-spacing: -10px;
+  }
+  .purple {
+    color: $purple;
+  }
+  .mid-blue {
+    color: $mid-blue;
+  }
+  .winterwizard {
+    color: $winterwizard;
+  }
+  .dark-blue {
+    color: $dark-blue;
+  }
+  .dark-grey {
+    color: $dark-grey;
+  }
+}
+
+.name-space {
+  padding: 6px;
+  @media screen and (min-width: 1200px) {
+    padding: 15px;
+  }
+}
+
+%small-title {
+  font-size: 1.5em;
+  margin: 10px 0;
+  font-family: $fancy-font;
+  @media screen and (min-width: 1200px) {
+    font-size: 2.2em;
+  }
+}
+
+.subtitle {
+  @extend %small-title;
+  color: $dark-grey;
+}
+
+.section-title {
+  @extend %small-title;
+  color: $purple;
+}
+
+.profile {
+  font-style: italic;
+  font-size: 1em;
+  color: $dark-grey;
+  @media screen and (min-width: 1200px) {
+    font-size: 1.4em;
+    max-width: 800px;
+    margin: 1.2em auto 1.5em auto;
+    padding: 0 30px;  }
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.social-icons-container {
+  width: 150px;
+  margin: 10px auto;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.social-icons {
+
+  li {
+    padding: 0 10px;
+    font-size: 2.5em;  
+  }
+}
+
+a#twitter, a#github, a#linkedin {
+  background: none;
+}
+
+.social-icons :hover{
+  color: $mid-blue;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.blob {
+  padding: 1em 1.6em;
+  @media screen and (min-width: 1200px) {
+    margin: 0 -40px;
+    padding: 40px 160px;
+  }
+}
+
+.blob--background {
+  background-color: $pale-bg;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  justify-items: center;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px 20px;
+  }
+}
+
+.grid--mobile {
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.grid--text {
+  justify-items: start;
+  align-items: start;
+}
+
+.grid-item img {
+  max-width: 130px;
+  @media screen and (min-width: 1200px) {
+    max-width: 200px;
+  }
+}
+
+.mobile-only {
+  display: block;
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.desktop-only {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.grid-item--testimonial {
+  text-align: center;
+  font-style: italic;
+  line-height: 30px;
+  border-left: 3px $mid-blue solid;
+  background: $white;
+  padding: 0.3em 1.3em;
+  grid-column-start: span 2;
+  @media screen and (min-width: 1200px) {
+    font-size: 1.1em;
+    max-width: 300px;
+    padding: 2em 1.5em;
+    grid-column-start: span 1;
+  }
+}
+
+.grid-item--testimonial {
+  span {
+    font-style: normal;
+    font-size: 0.8em;
+  }
+}
+
+.bullet-list {
+  li {
+    margin-bottom: 10px;
+  }
+}
+
+.list-title {
+  font-size: 1.3em;
+  margin: 5px 0;
+}
+
+.list-subtitle {
+  font-style: italic;
+  margin: 0.5em 0;
+}
+
+.list-desc {
+  margin: 0.5em 0;
+  @media screen and (min-width: 1200px) {
+    padding-right: 20px;
+  }
+}
+
+#cfg {
+  max-height: 80px;
+  @media screen and (min-width: 1200px) {
+    max-height: 100px;
+  }
+}
+
+.footer-text {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  background:
+  linear-gradient(
+    to bottom, $mid-blue 0%,
+    $mid-blue 100%
+  );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  transition: background-size 0.4s; 
+
+  &:hover {
+    background-size: 4px 50px;
+    color: $white;
+  }
+
+  &#twitter :hover {
+    color: $mid-blue;
+  }
+  &#github :hover {
+    color: $purple;
+  }
+  &#linkedin :hover {
+    color: $light-blue;
+  }
+}
