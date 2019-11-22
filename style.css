@@ -253,7 +253,8 @@ a:hover {
   }
 
   .grid-item--testimonial {
-    max-width: 250px;
+    font-size: 1.1em;
+    max-width: 300px;
     padding: 2em 1.5em;
     grid-column-start: span 1;
   }
