@@ -39,7 +39,7 @@ main {
   margin: 0 auto;
 }
 
-header {
+header, footer {
   text-align: center;
   padding: 0 1.6em;
 
@@ -50,6 +50,10 @@ h1.site-header-name {
   font-size: 2.8em;
   opacity: 0.8;
   letter-spacing: -6px;
+}
+
+.name-space {
+  padding: 6px;
 }
 
 h2.subtitle,
@@ -82,11 +86,15 @@ ul {
 
 .social-icons li {
   padding: 0 10px;
-  font-size: 2.5em;
+  font-size: 2.5em;  
 }
 
-.social-icons p {
-  margin: 0;
+a#twitter, a#github, a#linkedin {
+  background: none;
+}
+
+.social-icons :hover{
+  color:#46acc2;
 }
 
 .section {
@@ -110,7 +118,7 @@ ul {
   align-items: center;
 }
 
-.grid--secondary {
+.grid--mobile {
   grid-template-columns: 1fr;
   justify-items: center;
   align-items: center;
@@ -136,14 +144,17 @@ ul {
 .grid-item--testimonial {
   text-align: center;
   font-style: italic;
-  line-height: 23px;
+  line-height: 30px;
   border-left: 3px #068d9d solid;
-  max-width: 250px;
   background: #fff;
   padding: 0.3em 1.3em;
   grid-column-start: span 2;
 }
 
+.grid-item--testimonial span {
+  font-style: normal;
+  font-size: 0.8em;
+}
 
 .bullet-list li {
   margin-bottom: 10px;
@@ -163,53 +174,77 @@ ul {
   margin: 0.5em 0;
 }
 
-.section--writing a {
-  text-decoration: none;
-}
-
 #cfg {
   max-height: 80px;
+}
+
+.footer-text {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+a#twitter :hover {
+  color: #46acc2;
+}
+a#github :hover {
+  color: #6d326d;
+}
+a#linkedin :hover {
+  color: #97dffc;
+}
+
+a, a:link {
+  text-decoration: none;
+  background:
+  linear-gradient(
+    to bottom, #46acc2 0%,
+    #46acc2 100%
+  );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  transition: background-size 0.4s; 
+}
+
+a:hover {
+  background-size: 4px 50px;
+  color: #fff;
 }
 
 /* Media Queries for desktop */
 
 @media screen and (min-width: 800px) {
   main {
-    margin: 0 auto;
     padding: 40px;
   }
 
   h1.site-header-name {
-    font-size: 4em;
+    font-size: 5em;
+    letter-spacing: -10px;
   }
 
   h2.subtitle,
   .section-title {
-    font-size: 1.6em;
-    margin-top: 10px;
+    font-size: 2.2em;
   }
 
   .name-space {
     padding: 15px;
   }
 
-  .social-icons {
-    font-size: 1.3em;
-  }
-
   .profile {
     font-size: 1.4em;
     max-width: 800px;
-    margin: 1.5em auto;
+    margin: 1.2em auto 1.5em auto;
     padding: 0 30px;
   }
 
   .grid {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 30px 10px;
+    grid-gap: 30px 20px;
   }
 
-  .grid--secondary {
+  .grid--mobile {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -219,7 +254,7 @@ ul {
 
   .grid-item--testimonial {
     max-width: 250px;
-    padding: 0.3em 1.3em;
+    padding: 2em 1.5em;
     grid-column-start: span 1;
   }
 
@@ -231,13 +266,13 @@ ul {
     display: block;
   }
 
-  p.list-desc {
+  .list-desc {
     padding-right: 20px;
   }
 
   .blob {
     margin: 0 -40px;
-    padding: 20px 160px;
+    padding: 40px 160px;
   }
 
   #cfg {
