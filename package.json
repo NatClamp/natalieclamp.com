@@ -19,9 +19,9 @@
   },
   "homepage": "https://github.com/NatClamp/natalieclamp.com#readme",
   "devDependencies": {
-    "parcel-bundler": "1.12.4",
-    "sass": "1.23.7",
     "dot-prop": ">=4.2.1",
-    "node-forge": ">=0.10.0"
+    "node-forge": ">=0.10.0",
+    "parcel-bundler": "^1.3.1",
+    "sass": "1.23.7"
   }
 }
